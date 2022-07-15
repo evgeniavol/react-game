@@ -43,7 +43,7 @@ export class ClassComponent extends React.Component {
           userNumber: '',
           count: state.count + 1,
         };
-      } else if ((state.userNumber = state.randomNumber)) {
+      } else {
         return {
           result: `Вы угадали загаданное число ${state.userNumber}
           попыток было: ${this.state.count + 1}`,
@@ -74,6 +74,7 @@ export class ClassComponent extends React.Component {
   };
 
   render() {
+    console.log(this.state.randomNumber);
     return (
       <div className={style.game}>
         <p className={style.result}>{this.state.result}</p>
