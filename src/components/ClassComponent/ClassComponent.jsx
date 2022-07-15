@@ -74,7 +74,6 @@ export class ClassComponent extends React.Component {
   };
 
   render() {
-    console.log(this.state.randomNumber);
     return (
       <div className={style.game}>
         <p className={style.result}>{this.state.result}</p>
